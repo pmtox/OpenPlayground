@@ -500,14 +500,46 @@ html[data-theme="dark"] .hero-grid {
     font-weight: 500;
     color: var(--primary-600);
     margin-bottom: var(--space-6);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 html[data-theme="dark"] .hero-badge {
     color: var(--primary-400);
 }
 
-.hero-badge i {
-    font-size: 1rem;
+.hero-badge {
+    background: rgba(59, 130, 246, 0.25);
+    color: #bfdbfe;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+        display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-6);
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    color: var(--primary-600);
+    background: var(--gradient-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-full);
+
+    cursor: pointer;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.hero-badge:hover {
+    background: rgba(99, 102, 241, 0.12); /* soft indigo */
+    color: var(--primary-700);
+
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.25);
 }
 
 .hero-title {
